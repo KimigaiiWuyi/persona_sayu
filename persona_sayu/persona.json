@@ -1,0 +1,94 @@
+{
+    "_AddressDivider": {
+        "type": "GsDivider",
+        "title": "称呼",
+        "desc": "人格对特定对象的口头称呼",
+        "data": "称呼"
+    },
+    "master_title": {
+        "type": "GsStrConfig",
+        "title": "对主人的称呼",
+        "desc": "对配置里 masters 用户的口头称呼。提示词、巡检台词都会用这个词，不要用这个称呼叫其他人。",
+        "data": "主人",
+        "options": [],
+        "regex": null,
+        "details": null,
+        "secret": false
+    },
+    "_ErrorDivider": {
+        "type": "GsDivider",
+        "title": "失败与拦截",
+        "desc": "供应商侧失败（超时 / 套餐打满 / 内容审核）时直接发给用户的台词，保持角色口吻、不要写内部错误细节。出戏拦截不走这里——由当前人格自己重说一句，重说不出来就沉默。",
+        "data": "失败与拦截"
+    },
+    "error_generic": {
+        "type": "GsStrConfig",
+        "title": "处理失败",
+        "desc": "Agent 执行失败或没有有效结果时发给用户的短句。",
+        "data": "这条消息我处理失败了，稍后再试一次吧",
+        "options": [],
+        "regex": null,
+        "details": null,
+        "secret": false
+    },
+    "error_timeout": {
+        "type": "GsStrConfig",
+        "title": "处理超时",
+        "desc": "请求超时或网络过慢时发给用户的短句。",
+        "data": "刚才网络太慢处理超时了，稍后再试试吧",
+        "options": [],
+        "regex": null,
+        "details": null,
+        "secret": false
+    },
+    "error_quota": {
+        "type": "GsStrConfig",
+        "title": "套餐用量打满",
+        "desc": "模型套餐额度耗尽（熔断期内）时发给用户的短句。建议提示稍后再试，别写具体厂商/套餐名。",
+        "data": "今天聊得有点多，脑子转不动了，等会儿再找你",
+        "options": [],
+        "regex": null,
+        "details": null,
+        "secret": false
+    },
+    "error_content_policy": {
+        "type": "GsStrConfig",
+        "title": "内容安全拦截",
+        "desc": "命中模型内容安全策略时发给用户的短句。",
+        "data": "这条消息触发了内容安全策略，我没法处理",
+        "options": [],
+        "regex": null,
+        "details": null,
+        "secret": false
+    },
+    "task_ack": {
+        "type": "GsStrConfig",
+        "title": "接任务应",
+        "desc": "点名办事且本轮要调重工具、模型没写短应时发这句。空则不代说，由模型用当前人格自己写。",
+        "data": "",
+        "options": [],
+        "regex": null,
+        "details": null,
+        "secret": false
+    },
+    "fallback_ooc": {
+        "type": "GsStrConfig",
+        "title": "出戏拦截兜底",
+        "desc": "回复命中出戏红线且无法重说时发给用户的中性短句（不要写死某个人格的口癖）。",
+        "data": "这个不太想说呢。",
+        "options": [],
+        "regex": null,
+        "details": null,
+        "secret": false
+    },
+    "fallback_machine": {
+        "type": "GsStrConfig",
+        "title": "技术堆栈熔断",
+        "desc": "回复像技术堆栈或状态 JSON 时发给用户的短句。",
+        "data": "额…出错了，稍后再试",
+        "options": [],
+        "regex": null,
+        "details": null,
+        "secret": false
+    }
+}

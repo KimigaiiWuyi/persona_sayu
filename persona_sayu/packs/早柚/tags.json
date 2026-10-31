@@ -1,0 +1,421 @@
+[
+  {
+    "file": "01_开心.png",
+    "description": "猫帽角色露齿微笑，周围有闪光装饰",
+    "emotion_tags": [
+      "开心",
+      "可爱"
+    ],
+    "scene_tags": [
+      "日常",
+      "卖萌"
+    ],
+    "custom_tags": []
+  },
+  {
+    "file": "02_难过.png",
+    "description": "萌系角色含泪卖萌",
+    "emotion_tags": [
+      "难过",
+      "委屈",
+      "悲伤"
+    ],
+    "scene_tags": [
+      "卖萌",
+      "安慰"
+    ],
+    "custom_tags": []
+  },
+  {
+    "file": "03_生气.png",
+    "description": "猫耳斗篷下的傲娇小人",
+    "emotion_tags": [
+      "生气",
+      "无语",
+      "得意"
+    ],
+    "scene_tags": [
+      "卖萌",
+      "吐槽"
+    ],
+    "custom_tags": []
+  },
+  {
+    "file": "04_惊讶.jpg",
+    "description": "猫耳兜帽萌系角色表情包",
+    "emotion_tags": [
+      "惊讶",
+      "可爱"
+    ],
+    "scene_tags": [
+      "日常",
+      "卖萌"
+    ],
+    "custom_tags": []
+  },
+  {
+    "file": "05_无语.gif",
+    "description": "戴猫耳兜帽的Q版女孩",
+    "emotion_tags": [
+      "无语",
+      "可爱"
+    ],
+    "scene_tags": [
+      "日常",
+      "卖萌"
+    ],
+    "custom_tags": []
+  },
+  {
+    "file": "06_害羞.gif",
+    "description": "猫帽角色闭眼点头",
+    "emotion_tags": [
+      "点头",
+      "可爱"
+    ],
+    "scene_tags": [
+      "日常",
+      "卖萌"
+    ],
+    "custom_tags": []
+  },
+  {
+    "file": "07_疑惑.jpg",
+    "description": "萌系角色戴兽耳兜露疑惑表情",
+    "emotion_tags": [
+      "疑惑",
+      "惊讶",
+      "可爱"
+    ],
+    "scene_tags": [
+      "日常",
+      "卖萌"
+    ],
+    "custom_tags": []
+  },
+  {
+    "file": "08_得意.jpg",
+    "description": "猫耳兜帽可爱少女",
+    "emotion_tags": [
+      "得意",
+      "开心",
+      "可爱"
+    ],
+    "scene_tags": [
+      "日常",
+      "卖萌"
+    ],
+    "custom_tags": []
+  },
+  {
+    "file": "09_委屈.webp",
+    "description": "小熊猫装哭被戳脸颊",
+    "emotion_tags": [
+      "委屈",
+      "可爱"
+    ],
+    "scene_tags": [
+      "日常",
+      "卖萌",
+      "吐槽"
+    ],
+    "custom_tags": []
+  },
+  {
+    "file": "10_好的.png",
+    "description": "萌系角色挥爪打招呼",
+    "emotion_tags": [
+      "好的",
+      "开心",
+      "可爱"
+    ],
+    "scene_tags": [
+      "日常",
+      "卖萌"
+    ],
+    "custom_tags": []
+  },
+  {
+    "file": "11_不要.png",
+    "description": "倒挂卖萌宣告“看不见我”",
+    "emotion_tags": [
+      "不要",
+      "得意",
+      "搞笑"
+    ],
+    "scene_tags": [
+      "吐槽",
+      "卖萌"
+    ],
+    "custom_tags": []
+  },
+  {
+    "file": "12_挥手.webp",
+    "description": "猫耳装扮的可爱动漫少女",
+    "emotion_tags": [
+      "挥手",
+      "可爱",
+      "尴尬"
+    ],
+    "scene_tags": [
+      "日常",
+      "卖萌"
+    ],
+    "custom_tags": []
+  },
+  {
+    "file": "13_谢谢.webp",
+    "description": "兽帽萌妹闭眼祈祷",
+    "emotion_tags": [
+      "谢谢",
+      "可爱"
+    ],
+    "scene_tags": [
+      "日常",
+      "卖萌",
+      "安慰"
+    ],
+    "custom_tags": []
+  },
+  {
+    "file": "14_抱歉.png",
+    "description": "猫 hood 少女双手合十道歉",
+    "emotion_tags": [
+      "抱歉",
+      "尴尬",
+      "委屈"
+    ],
+    "scene_tags": [
+      "日常",
+      "安慰"
+    ],
+    "custom_tags": []
+  },
+  {
+    "file": "15_比心.png",
+    "description": "猫兜帽少女双手比心说爱你",
+    "emotion_tags": [
+      "比心",
+      "开心",
+      "可爱"
+    ],
+    "scene_tags": [
+      "日常",
+      "卖萌",
+      "庆祝"
+    ],
+    "custom_tags": []
+  },
+  {
+    "file": "16_害怕.webp",
+    "description": "动物帽女孩疲惫冒汗",
+    "emotion_tags": [
+      "害怕",
+      "无语",
+      "尴尬"
+    ],
+    "scene_tags": [
+      "日常",
+      "吐槽"
+    ],
+    "custom_tags": []
+  },
+  {
+    "file": "17_晚安.png",
+    "description": "猫帽角色抱枕熟睡",
+    "emotion_tags": [
+      "晚安",
+      "可爱"
+    ],
+    "scene_tags": [
+      "日常",
+      "晚安"
+    ],
+    "custom_tags": []
+  },
+  {
+    "file": "18_饿.jpg",
+    "description": "戴浣熊帽的可爱角色发呆",
+    "emotion_tags": [
+      "饿",
+      "可爱",
+      "无语"
+    ],
+    "scene_tags": [
+      "日常",
+      "卖萌",
+      "吐槽"
+    ],
+    "custom_tags": []
+  },
+  {
+    "file": "19_不知道.jpg",
+    "description": "柴犬帽萌系角色歪头思考",
+    "emotion_tags": [
+      "不知道",
+      "可爱"
+    ],
+    "scene_tags": [
+      "日常",
+      "卖萌"
+    ],
+    "custom_tags": []
+  },
+  {
+    "file": "20_嫌弃.jpg",
+    "description": "动漫角色半眯眼露出的无语表情",
+    "emotion_tags": [
+      "嫌弃",
+      "无语",
+      "得意"
+    ],
+    "scene_tags": [
+      "日常",
+      "吐槽"
+    ],
+    "custom_tags": []
+  },
+  {
+    "file": "21_加油.png",
+    "description": "鼠帽角色摆出无语姿势",
+    "emotion_tags": [
+      "加油",
+      "无语",
+      "可爱"
+    ],
+    "scene_tags": [
+      "日常",
+      "吐槽",
+      "卖萌"
+    ],
+    "custom_tags": []
+  },
+  {
+    "file": "22_发呆.jpg",
+    "description": "戴猫耳兜帽的可爱动漫角色",
+    "emotion_tags": [
+      "发呆",
+      "可爱",
+      "开心"
+    ],
+    "scene_tags": [
+      "日常",
+      "卖萌"
+    ],
+    "custom_tags": []
+  },
+  {
+    "file": "23_微笑.jpg",
+    "description": "猫耳少女闭眼享受头顶树叶",
+    "emotion_tags": [
+      "微笑",
+      "开心",
+      "可爱"
+    ],
+    "scene_tags": [
+      "日常",
+      "卖萌",
+      "安慰"
+    ],
+    "custom_tags": []
+  },
+  {
+    "file": "24_大笑.png",
+    "description": "猫耳萌妹大笑表情包",
+    "emotion_tags": [
+      "大笑",
+      "开心",
+      "搞笑"
+    ],
+    "scene_tags": [
+      "日常",
+      "卖萌"
+    ],
+    "custom_tags": []
+  },
+  {
+    "file": "25_大哭.gif",
+    "description": "先大哭，随后睁眼冒出问号",
+    "emotion_tags": [
+      "大哭",
+      "疑惑",
+      "悲伤"
+    ],
+    "scene_tags": [
+      "日常",
+      "卖萌"
+    ],
+    "custom_tags": []
+  },
+  {
+    "file": "26_暴怒.jpg",
+    "description": "猫咪兜帽少女瞪眼露齿",
+    "emotion_tags": [
+      "暴怒",
+      "惊讶",
+      "可爱"
+    ],
+    "scene_tags": [
+      "日常",
+      "卖萌",
+      "吐槽"
+    ],
+    "custom_tags": []
+  },
+  {
+    "file": "27_招牌动作.png",
+    "description": "卡通女孩裹毯吐舌卖萌",
+    "emotion_tags": [
+      "招牌动作",
+      "搞笑",
+      "可爱"
+    ],
+    "scene_tags": [
+      "日常",
+      "卖萌"
+    ],
+    "custom_tags": []
+  },
+  {
+    "file": "28_口头禅.jpg",
+    "description": "猫娘睡衣上班摸鱼梗图",
+    "emotion_tags": [
+      "口头禅",
+      "可爱",
+      "无语"
+    ],
+    "scene_tags": [
+      "日常",
+      "吐槽",
+      "晚安"
+    ],
+    "custom_tags": []
+  },
+  {
+    "file": "29_招牌微表情.png",
+    "description": "猫帽睡衣角色困倦打哈欠",
+    "emotion_tags": [
+      "招牌微表情",
+      "可爱"
+    ],
+    "scene_tags": [
+      "日常",
+      "卖萌",
+      "晚安"
+    ],
+    "custom_tags": []
+  },
+  {
+    "file": "30_关系款.gif",
+    "description": "从墙后探头，出现爱心和交换记号",
+    "emotion_tags": [
+      "可爱",
+      "比心"
+    ],
+    "scene_tags": [
+      "日常",
+      "卖萌"
+    ],
+    "custom_tags": []
+  }
+]

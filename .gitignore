@@ -1,0 +1,21 @@
+# OS artifacts
+Thumbs.db
+desktop.ini
+.DS_Store
+nul
+
+# Editor
+.vscode/
+.idea/
+
+# Python cache (if any tooling is added)
+__pycache__/
+*.py[cod]
+
+# Persona bundle exports / temp archives
+*.persona.zip
+
+# Temp / backup files
+*.tmp
+*.bak
+*~

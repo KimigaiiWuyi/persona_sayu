@@ -1,0 +1,222 @@
+{
+    "ai_mode": {
+        "type": "GsListStrConfig",
+        "title": "AI行动模式",
+        "desc": "指定AI的行动模式, AI只会在预定条件完成时才会执行操作",
+        "data": [
+            "提及应答",
+            "定时巡检",
+            "命令补充"
+        ],
+        "options": [
+            "提及应答",
+            "定时巡检",
+            "命令补充",
+            "困境救场(暂不可用)"
+        ],
+        "secret": false
+    },
+    "aside_image_probability": {
+        "type": "GsFloatConfig",
+        "title": "命令补充·只发图片",
+        "desc": "命令补充开启后，命令回复只有图片时补一句的概率，0 到 1。未抽中也会把这次命令和回复写入当前会话。",
+        "data": 1.0,
+        "min_value": 0.0,
+        "max_value": 1.0,
+        "secret": false
+    },
+    "aside_text_probability": {
+        "type": "GsFloatConfig",
+        "title": "命令补充·只发文字",
+        "desc": "命令补充开启后，命令回复只有文字时补一句的概率，0 到 1。失败说明和用法提示算文字。",
+        "data": 1.0,
+        "min_value": 0.0,
+        "max_value": 1.0,
+        "secret": false
+    },
+    "aside_mixed_probability": {
+        "type": "GsFloatConfig",
+        "title": "命令补充·图文混合",
+        "desc": "命令补充开启后，命令回复同时有图和文字时补一句的概率，0 到 1。",
+        "data": 1.0,
+        "min_value": 0.0,
+        "max_value": 1.0,
+        "secret": false
+    },
+    "aside_allow_tools": {
+        "type": "GsBoolConfig",
+        "title": "命令补充允许工具",
+        "desc": "为真时，点评可以调用当前人格的工具，并阅读这条命令所属插件目录里的源码。默认关闭。",
+        "data": true,
+        "secret": false
+    },
+    "aside_skip_plugins": {
+        "type": "GsListStrConfig",
+        "title": "命令补充跳过插件",
+        "desc": "这些插件发出的回执永远不进入命令补充/点评，默认包含 core_command",
+        "data": [
+            "core_command"
+        ],
+        "options": [],
+        "secret": false
+    },
+    "aside_cooldown_seconds": {
+        "type": "GsFloatConfig",
+        "title": "命令补充冷却时间(秒)",
+        "desc": "同一会话两次命令点评的最小间隔时间（秒）。默认120秒。",
+        "data": 120.0,
+        "min_value": 0.0,
+        "max_value": null,
+        "secret": false
+    },
+    "scope": {
+        "type": "GsStrConfig",
+        "title": "启用范围",
+        "desc": "指定该人格的启用范围: disabled(不启用), global(对所有群/私聊启用), global_group(仅全部群聊), global_private(仅全部私聊), specific(仅指定群聊/用户)。global / global_group / global_private 全局互斥，只能有一个",
+        "data": "global",
+        "options": [
+            "disabled",
+            "global",
+            "specific",
+            "global_group",
+            "global_private"
+        ],
+        "regex": null,
+        "details": null,
+        "secret": false
+    },
+    "target_groups": {
+        "type": "GsListStrConfig",
+        "title": "目标群聊/角色",
+        "desc": "当启用范围为 'specific' 时，指定该人格对哪些群聊/角色启用",
+        "data": [
+            "9999"
+        ],
+        "options": [],
+        "secret": false
+    },
+    "inspect_interval": {
+        "type": "GsIntConfig",
+        "title": "定时巡检间隔",
+        "desc": "当AI行动模式包含'定时巡检'时，指定巡检间隔（分钟）。默认60分钟",
+        "data": 5,
+        "max_value": null,
+        "options": [
+            5,
+            10,
+            15,
+            30,
+            60
+        ],
+        "secret": false
+    },
+    "keywords": {
+        "type": "GsListStrConfig",
+        "title": "唤醒关键词",
+        "desc": "当消息中包含这些关键词时，即使没有@机器人也会触发AI响应。多个关键词用换行分隔",
+        "data": [
+            "sayu"
+        ],
+        "options": [],
+        "secret": false
+    },
+    "speech_len_soft": {
+        "type": "GsIntConfig",
+        "title": "台词软上限（字）",
+        "desc": "角色卡渲染的建议台词长度，默认 60。留默认即跟随「说话强度」派生",
+        "data": 60,
+        "max_value": null,
+        "options": [
+            30,
+            45,
+            60,
+            80,
+            100
+        ],
+        "secret": false
+    },
+    "chat_style": {
+        "type": "GsIntConfig",
+        "title": "说话强度",
+        "desc": "控制发言形态：0=惜字如金（1条/30字）、50=默认（2条/60字）、100=连珠炮（4条/90字）。与关系温度正交：关系管态度语气，本项管发几条/多长/怎么分段。保存后，用这张人格的各会话会换上新字数。",
+        "data": 50,
+        "max_value": null,
+        "options": [
+            0,
+            25,
+            50,
+            75,
+            100
+        ],
+        "secret": false
+    },
+    "enabled_tools": {
+        "type": "GsListStrConfig",
+        "title": "启用工具（按插件）",
+        "desc": "决定该人格的向量检索池收录哪些插件的工具。默认 * = 全部插件都进检索池；!插件名 = 排除该插件；只填具体插件名 = 仅这些进检索池。不影响常驻直装工具（send_message_by_ai 等框架能力）与显式工具白名单里的常驻工具。",
+        "data": [
+            "*"
+        ],
+        "options": [
+            "*"
+        ],
+        "secret": false
+    },
+    "tool_names": {
+        "type": "GsListStrConfig",
+        "title": "显式工具白名单",
+        "desc": "该人格常驻直装的工具名：每轮直接进工具表，不经向量检索，也不占检索名额。框架默认常驻工具（send_message_by_ai、find_tools 等）默认已写入，其余按需增删。多个用换行分隔。",
+        "data": [],
+        "options": [],
+        "secret": false
+    },
+    "capability_agents": {
+        "type": "GsListStrConfig",
+        "title": "可委派能力代理",
+        "desc": "该人格允许 create_subagent 的 node_id。含 * 表示全部；!node_id 表示禁用（如 !render_agent）。只填具体 id 则仅这些可委派。空列表表示不可委派任何能力代理。",
+        "data": [
+            "*"
+        ],
+        "options": [
+            "*"
+        ],
+        "secret": false
+    },
+    "prompt_group": {
+        "type": "GsStrConfig",
+        "title": "系统提示词组",
+        "desc": "该人格使用的系统提示词组。默认组每次启动从程序写回，不能改其正文。",
+        "data": "默认",
+        "options": [],
+        "regex": null,
+        "details": null,
+        "secret": false
+    },
+    "speech_len_hard": {
+        "type": "GsIntConfig",
+        "title": "台词硬上限（字）",
+        "desc": "超过且用户未要求详细时进纠正轮，默认 150。留默认即跟随「说话强度」派生",
+        "data": 150,
+        "max_value": null,
+        "options": [
+            80,
+            120,
+            150,
+            200,
+            300
+        ],
+        "secret": false
+    },
+    "tool_packs": {
+        "type": "GsListStrConfig",
+        "title": "工具能力族（已固定）",
+        "desc": "工具能力族已固定为 dynamic（运行时五层自动装配），不再开放配置，历史值会被忽略。需要固定某个插件工具请改「显式工具白名单」，需要缩小检索范围请改「启用工具（按插件）」。",
+        "data": [
+            "dynamic"
+        ],
+        "options": [
+            "dynamic"
+        ],
+        "secret": false
+    }
+}
